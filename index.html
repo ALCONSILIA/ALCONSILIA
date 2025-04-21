@@ -1,5 +1,102 @@
 <!DOCTYPE html>
-<html>
-  <head><title>Coming Soon</title></head>
-  <body><h1>Alconsilia</h1><p>Website coming soon.</p></body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alconsilia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #1a3c3d;
+    }
+    header {
+      background-color: #2e8b8b;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #2e8b8b;
+    }
+    .contact a {
+      color: #2e8b8b;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #2e8b8b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Alconsilia Logo" />
+    <nav>
+      <a href="#bio">Bio</a>
+      <a href="#services">Services</a>
+      <a href="#knowledge">Knowledge Base</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="bio">
+    <h2>About Alconsilia</h2>
+    <p>Alconsilia is an independent strategic consulting firm helping organizations navigate growth, transformation, and operational change. We combine deep industry insight with pragmatic delivery models to turn complexity into clarity.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Strategy Consulting</li>
+      <li>Growth Advisory</li>
+      <li>M&A Support</li>
+      <li>Technology Transformation</li>
+    </ul>
+  </section>
+
+  <section id="knowledge">
+    <h2>Knowledge Base</h2>
+    <p>Coming soon: insights, articles, and thought leadership to guide your growth journey.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Let’s connect:</p>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</body>
 </html>
