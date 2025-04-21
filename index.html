@@ -1,40 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alconsilia</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Playfair Display', serif;
-      background-color: #ffffff;
+      background-color: white;
+      background-image: url('2f15b645-4391-4440-a67f-27edea18f694.png');
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: 260px auto;
+      padding-left: 280px;
       color: #1a3c3d;
     }
     header {
-      background-color: #2e8b8b;
+      background-color: #4c8685;
       padding: 20px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
     header img {
-      height: 130px;
+      height: 50px;
     }
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #ffffff;
+      color: white;
       font-weight: bold;
     }
     section {
-      padding: 60px 20px;
+      padding: 20px 20px 10px;
       max-width: 800px;
-      margin: auto;
     }
     h2 {
       color: #2e8b8b;
+      margin-bottom: 5px;
     }
     .contact a {
       color: #2e8b8b;
@@ -42,9 +48,10 @@
     form input, form textarea {
       width: 100%;
       padding: 10px;
-      margin: 10px 0;
+      margin: 8px 0;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-family: 'Playfair Display', serif;
     }
     form button {
       background-color: #2e8b8b;
@@ -53,6 +60,7 @@
       padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
+      font-family: 'Playfair Display', serif;
     }
   </style>
 </head>
@@ -95,7 +103,7 @@
     <form>
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
