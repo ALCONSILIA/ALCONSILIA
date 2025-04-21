@@ -10,24 +10,19 @@
       margin: 0;
       font-family: 'Cormorant Garamond', serif;
       display: flex;
-      background-color: white;
     }
 
     .sidebar {
-      width: 240px;
-      background-image: url("pantheon_sidebar.png");
+      width: 250px;
+      background: url("pantheon_sidebar.png") no-repeat left top;
       background-size: cover;
-      background-repeat: no-repeat;
-      background-position: left top;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
+      min-height: 100vh;
       flex-shrink: 0;
     }
 
     .main-content {
-      padding: 40px 60px;
-      max-width: 1000px;
-      margin: auto;
+      flex: 1;
+      background-color: white;
     }
 
     header {
@@ -36,12 +31,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 15px 40px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
+      padding: 15px 30px;
     }
 
     header img {
@@ -52,11 +42,15 @@
       color: white;
       text-decoration: none;
       margin: 0 20px;
-      font-weight: 400;
+      font-size: 18px;
+    }
+
+    .container {
+      padding: 30px 40px;
     }
 
     h2 {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       color: #316666;
       font-size: 26px;
     }
@@ -64,11 +58,15 @@
     p, li {
       font-size: 18px;
       line-height: 1.5;
-      margin: 0;
+      margin: 4px 0;
     }
 
     section {
-      margin-bottom: 35px;
+      margin-bottom: 28px;
+    }
+
+    ul {
+      padding-left: 20px;
     }
 
     .contact-info a {
@@ -91,40 +89,40 @@
       </nav>
     </header>
 
-    <div style="height: 100px;"></div> <!-- Spacer below fixed header -->
+    <div class="container">
+      <section id="about">
+        <h2>About Alconsilia</h2>
+        <p>
+          Alconsilia is an independent strategic consulting firm helping organizations navigate growth, transformation, and operational change. We combine deep industry insight with pragmatic delivery models to turn complexity into clarity.
+        </p>
+      </section>
 
-    <section id="about">
-      <h2>About Alconsilia</h2>
-      <p>
-        Alconsilia is an independent strategic consulting firm helping organizations navigate growth, transformation, and operational change. We combine deep industry insight with pragmatic delivery models to turn complexity into clarity.
-      </p>
-    </section>
+      <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Strategy Consulting</li>
+          <li>Growth Advisory</li>
+          <li>M&A Support</li>
+          <li>Technology Transformation</li>
+        </ul>
+      </section>
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Strategy Consulting</li>
-        <li>Growth Advisory</li>
-        <li>M&A Support</li>
-        <li>Technology Transformation</li>
-      </ul>
-    </section>
+      <section id="knowledge">
+        <h2>Knowledge Base</h2>
+        <p>
+          Coming soon: insights, articles, and thought leadership to guide your growth journey.
+        </p>
+      </section>
 
-    <section id="knowledge">
-      <h2>Knowledge Base</h2>
-      <p>
-        Coming soon: insights, articles, and thought leadership to guide your growth journey.
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Let’s connect:</p>
-      <div class="contact-info">
-        <p>Email: <a href="mailto:info@alconsilia.pro">info@alconsilia.pro</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/alialeuchanka" target="_blank">linkedin.com/in/alialeuchanka</a></p>
-      </div>
-    </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Let’s connect:</p>
+        <div class="contact-info">
+          <p>Email: <a href="mailto:info@alconsilia.pro">info@alconsilia.pro</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/alialeuchanka" target="_blank">linkedin.com/in/alialeuchanka</a></p>
+        </div>
+      </section>
+    </div>
   </div>
 </body>
 </html>
