@@ -1,9 +1,11 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Alconsilia | About</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alconsilia | About</title>
+  <meta name="description" content="Alconsilia is a strategic consultancy helping organizations scale, transform, and deliver operational excellence.">
+  <meta name="keywords" content="Alconsilia, strategy consulting, operational excellence, growth advisor, business transformation, M&A support">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <style>
     body {
@@ -16,11 +18,13 @@
       background-size: 120px auto;
       padding-left: 140px;
       color: #2c3e50;
+      font-size: 18px;
+      line-height: 1.6;
     }
 
     header {
       background-color: #4f868e;
-      padding: 20px 40px;
+      padding: 16px 32px;
       color: white;
       display: flex;
       justify-content: space-between;
@@ -30,38 +34,53 @@
       left: 0;
       width: 100%;
       z-index: 999;
+      box-sizing: border-box;
     }
 
     header img {
-      height: 60px;
-    }
-
-    nav {
-      margin-left: auto;
+      height: 52px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 40px;
-      font-size: 18px;
+      margin-left: 32px;
+      font-size: 17px;
     }
 
     main {
-      padding: 140px 60px 60px 60px;
-      max-width: 800px;
+      padding: 120px 40px 60px 40px;
+      max-width: 880px;
     }
 
     h2 {
       color: #4f868e;
+      font-size: 26px;
+      margin-top: 40px;
+      margin-bottom: 14px;
     }
 
-    section {
-      scroll-margin-top: 100px;
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+      margin-bottom: 24px;
     }
 
-    p {
-      text-align: justify;
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #4f868e;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact p {
+      margin: 6px 0;
     }
   </style>
 </head>
@@ -69,7 +88,7 @@
   <header>
     <img src="logo.png" alt="Alconsilia Logo" />
     <nav>
-      <a href="index.html">About</a>
+      <a href="index.html">About Alconsilia</a>
       <a href="services.html">Services</a>
       <a href="knowledge.html">Knowledge Base</a>
       <a href="contact.html">Contact</a>
@@ -78,10 +97,32 @@
 
   <main>
     <section id="about">
-      <h2>About</h2>
+      <h2>About Alconsilia</h2>
       <p>
-        Alconsilia is an independent strategic consulting firm helping IT services companies navigate growth, transformation, and operational change. We help you scale without the burden of hiring permanent executives — think of us like your on-demand COO. You access our expertise when you need it, without long-term overhead. No retainers, no full-time headcount — just real impact, delivered flexibly.
+        Alconsilia is an independent strategic consulting firm helping organizations navigate growth, transformation, and operational change. We combine deep industry insight with pragmatic delivery models to turn complexity into clarity.
       </p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Strategy Consulting</li>
+        <li>Growth Advisory</li>
+        <li>M&amp;A Support</li>
+        <li>Technology Transformation</li>
+      </ul>
+    </section>
+
+    <section id="knowledge">
+      <h2>Knowledge Base</h2>
+      <p>Coming soon: insights, articles, and thought leadership to guide your growth journey.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Let’s connect:</p>
+      <p>Email: <a href="mailto:info@alconsilia.pro">info@alconsilia.pro</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/alialeuchanka" target="_blank">linkedin.com/in/alialeuchanka</a></p>
     </section>
   </main>
 </body>
