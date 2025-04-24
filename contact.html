@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alconsilia | Contact</title>
-  <meta name="description" content="Contact Alconsilia for strategic consulting services." />
-  <meta name="keywords" content="contact Alconsilia, strategic consulting, connect Alconsilia" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Alconsilia</title>
+  <meta name="description" content="Get in touch with Alconsilia for strategic consulting services in IT and business transformation.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"/>
   <style>
     body {
       margin: 0;
       font-family: 'Libre Baskerville', serif;
       background-color: white;
-      background-image: url('A_pencil_sketch_on_textured,_slightly_off-white_pa.png');
-      background-repeat: no-repeat;
+      background-image: url('pantheon_sketch_light.png');
+      background-repeat: repeat-y;
       background-position: center top;
       background-size: cover;
       padding-left: 140px;
@@ -22,10 +21,10 @@
 
     header {
       background-color: #4f868e;
-      padding: 10px 20px 10px 0;
+      padding: 10px 20px;
       color: white;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: center;
       position: fixed;
       top: 0;
@@ -40,17 +39,15 @@
     }
 
     nav {
+      flex: 1;
       display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: 100%;
-      margin-left: 40px;
+      justify-content: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 40px;
+      margin: 0 30px;
       font-size: 18px;
     }
 
@@ -76,28 +73,49 @@
     }
 
     form {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      max-width: 600px;
+      margin-top: 20px;
     }
 
-    input, textarea {
-      padding: 10px;
+    label {
+      display: block;
+      margin-top: 16px;
       font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      font-size: 16px;
+      font-family: 'Libre Baskerville', serif;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
 
-    input[type="submit"] {
-      background-color: #4f868e;
-      color: white;
-      cursor: pointer;
-      border: none;
+    textarea {
+      height: 120px;
     }
 
-    input[type="submit"]:hover {
-      background-color: #3a6a70;
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: 'Libre Baskerville', serif;
+      background-color: #4f868e;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact p {
+      margin: 4px 0;
+    }
+
+    a {
+      color: #4f868e;
     }
   </style>
 </head>
@@ -120,10 +138,16 @@
       <p>LinkedIn: <a href="https://linkedin.com/in/alialeuchanka" target="_blank">linkedin.com/in/alialeuchanka</a></p>
 
       <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="6" placeholder="How can I help?" required></textarea>
-        <input type="submit" value="Send">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">How can I help?</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
       </form>
     </section>
   </main>
