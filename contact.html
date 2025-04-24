@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | Alconsilia</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alconsilia | Contact</title>
+  <meta name="description" content="Contact Alconsilia for strategic consulting services." />
+  <meta name="keywords" content="contact Alconsilia, strategic consulting, connect Alconsilia" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" />
   <style>
     body {
       margin: 0;
       font-family: 'Libre Baskerville', serif;
       background-color: white;
-      background-image: url('pantheon_background_light.png');
-      background-repeat: repeat-y;
+      background-image: url('A_pencil_sketch_on_textured,_slightly_off-white_pa.png');
+      background-repeat: no-repeat;
       background-position: center top;
-      background-size: contain;
+      background-size: cover;
       padding-left: 140px;
       color: #2c3e50;
     }
@@ -65,7 +67,6 @@
       color: #4f868e;
       font-size: 28px;
       margin-bottom: 10px;
-      font-weight: bold;
     }
 
     p {
@@ -75,40 +76,28 @@
     }
 
     form {
-      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 600px;
     }
 
     input, textarea {
-      width: 100%;
       padding: 10px;
-      margin-bottom: 16px;
-      font-family: 'Libre Baskerville', serif;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
 
-    button {
+    input[type="submit"] {
       background-color: #4f868e;
       color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
       cursor: pointer;
+      border: none;
     }
 
-    .contact-info {
-      margin-top: 40px;
-    }
-
-    .contact-info a {
-      color: #4f868e;
-      text-decoration: none;
-    }
-
-    .contact-info a:hover {
-      text-decoration: underline;
+    input[type="submit"]:hover {
+      background-color: #3a6a70;
     }
   </style>
 </head>
@@ -126,24 +115,16 @@
   <main>
     <section id="contact">
       <h2>Contact</h2>
-      <form action="https://formsubmit.co/info@alconsilia.pro" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+      <p>Let’s connect:</p>
+      <p>Email: <a href="mailto:info@alconsilia.pro">info@alconsilia.pro</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/alialeuchanka" target="_blank">linkedin.com/in/alialeuchanka</a></p>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">How can I help?</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send</button>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="How can I help?" required></textarea>
+        <input type="submit" value="Send">
       </form>
-
-      <div class="contact-info">
-        <p><strong>Let’s connect:</strong></p>
-        <p>Email: <a href="mailto:info@alconsilia.pro">info@alconsilia.pro</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/alialeuchanka" target="_blank">linkedin.com/in/alialeuchanka</a></p>
-      </div>
     </section>
   </main>
 </body>
