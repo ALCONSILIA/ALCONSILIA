@@ -22,7 +22,7 @@
 
     header {
       background-color: #4f868e;
-      padding: 0 40px;
+      padding: 0 20px;
       color: white;
       display: flex;
       align-items: center;
@@ -30,20 +30,25 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 120px;
       z-index: 999;
+      height: 140px;
     }
 
-    header img {
+    .logo-container {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .logo-container img {
       height: 100%;
       width: auto;
     }
 
     nav {
-      display: flex;
       margin-left: auto;
+      display: flex;
       align-items: center;
-      height: 100%;
     }
 
     nav a {
@@ -54,7 +59,7 @@
     }
 
     main {
-      padding: 140px 60px 60px 60px;
+      padding: 160px 60px 60px 60px;
       max-width: 880px;
     }
 
@@ -107,77 +112,15 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Alconsilia Logo" />
+    <div class="logo-container">
+      <img src="logo.png" alt="Alconsilia Logo" />
+    </div>
     <nav>
-      <a href="index.html">About</a>
+      <a href="index.html">About Alconsilia</a>
       <a href="services.html">Services</a>
       <a href="knowledge.html">Knowledge Base</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        Alconsilia is an independent strategic consulting firm helping IT services companies navigate growth, transformation, and operational change. We help you scale without the burden of hiring permanent executives — think of us like your on-demand COO. You access our expertise when you need it, without long-term overhead. No retainers, no full-time headcount — just real impact, delivered flexibly.
-      </p>
-    </section>
-
-    <section id="services">
-      <h2>Services</h2>
-
-      <h3>Scaling strategy</h3>
-      <ul>
-        <li>Growth advisory</li>
-        <li>Market entry analysis & competitive mapping</li>
-        <li>Go-to-Market strategy & execution planning</li>
-        <li>New delivery locations establishment & ramp-up strategy</li>
-      </ul>
-
-      <h3>M&A support</h3>
-      <ul>
-        <li>M&A due diligence</li>
-        <li>Post-merger integration coordination</li>
-      </ul>
-
-      <h3>Revenue enablement & sales strategy</h3>
-      <ul>
-        <li>Sales team hiring</li>
-        <li>Sales representative coaching</li>
-        <li>Custom Sales Playbook development</li>
-        <li>Sales & pre-sales process implementation</li>
-        <li>Rate card creation/re-design</li>
-      </ul>
-
-      <h3>Account Management setup</h3>
-      <ul>
-        <li>Account management process design</li>
-        <li>Account development roadmap creation</li>
-        <li>Client health monitoring & reporting procedures</li>
-        <li>Account profitability analysis and improvement</li>
-      </ul>
-
-      <h3>Organizational transformation</h3>
-      <ul>
-        <li>Change management design & implementation</li>
-        <li>Managerial accounting set-up</li>
-        <li>Process automation & workflow optimization</li>
-        <li>Manual-to-digital transformation roadmapping</li>
-      </ul>
-    </section>
-
-    <section id="knowledge">
-      <h2>Knowledge base</h2>
-      <p>Coming soon: insights, articles, and thought leadership to guide your growth journey.</p>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Let’s connect:</p>
-      <p>Email: <a href="mailto:info@alconsilia.pro">info@alconsilia.pro</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/alialeuchanka" target="_blank">linkedin.com/in/alialeuchanka</a></p>
-    </section>
-  </main>
 </body>
 </html>
