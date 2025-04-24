@@ -13,7 +13,7 @@
       font-family: 'Libre Baskerville', serif;
       background-color: white;
       background-image: url('pantheon_sidebar.png');
-      background-repeat: no-repeat;
+      background-repeat: repeat-y; /* ← repeat image vertically */
       background-position: left top;
       background-size: 120px auto;
       padding-left: 140px;
@@ -22,22 +22,21 @@
 
     header {
       background-color: #4f868e;
-      padding: 10px 30px;
+      padding: 10px 40px;
       color: white;
       display: flex;
+      justify-content: space-between;
       align-items: center;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       z-index: 999;
-      box-sizing: border-box;
     }
 
     header img {
       height: 120px;
       width: 120px;
-      object-fit: contain;
     }
 
     nav {
@@ -123,43 +122,48 @@
     </section>
 
     <section id="services">
-      <h2>Our Services</h2>
+      <h2>Services</h2>
 
-      <h3>Growth & Market Strategy</h3>
+      <h3>Scaling strategy</h3>
       <ul>
+        <li>Growth advisory</li>
         <li>Market entry analysis & competitive mapping</li>
         <li>Go-to-Market strategy & execution planning</li>
-        <li>Growth advisory</li>
-        <li>M&A due diligence</li>
         <li>New delivery locations establishment & ramp-up strategy</li>
       </ul>
-
-      <h3>M&A & Organizational transformation</h3>
+       
+      <h3>M&A support </h3>
       <ul>
+        <li>M&A due diligence</li>
         <li>Post-merger integration coordination</li>
-        <li>Change management design & implementation</li>
-        <li>Managerial accounting set-up</li>
-        <li>Process automation & workflow optimization</li>
-        <li>Manual-to-digital transformation roadmapping</li>
       </ul>
 
       <h3>Revenue enablement & sales strategy</h3>
       <ul>
         <li>Sales team hiring</li>
-        <li>Sales representative training & coaching</li>
+        <li>Sales representative coaching</li>
         <li>Custom Sales Playbook development</li>
-        <li>Sales & pre-Sales process implementation</li>
-        <li>Rate card creation/update</li>
+        <li>Sales & pre-sales process implementation</li>
+        <li>Rate card creation/re-design</li>
       </ul>
 
       <h3>Account Management setup</h3>
       <ul>
-        <li>Account management function design</li>
+        <li>Account management process design</li>
         <li>Account development roadmap creation</li>
         <li>Client health monitoring & reporting procedures</li>
         <li>Account profitability analysis and improvement</li>
       </ul>
-    </section>
+   
+   
+       <h3>Organizational transformation</h3>
+       <ul>
+        <li>Change management design & implementation</li>
+        <li>Managerial accounting set-up</li>
+        <li>Process automation & workflow optimization</li>
+        <li>Manual-to-digital transformation roadmapping</li>
+    </ul>
+ </section>
 
     <section id="knowledge">
       <h2>Knowledge base</h2>
